@@ -2,20 +2,20 @@ import React from 'react'
 
 import { ButtonContainer } from './styles';
 
-
-function Button({onClick}) {
+function ButtonBuscar({onClick}) {
   return (
     <ButtonContainer onClick={onClick}>
-       Buscar
+      Buscar
     </ButtonContainer>
   )
 }
 
-export default Button
+function ButtonRemover({onClick}) {
+  return (
+    <ButtonContainer onClick={onClick}>
+      Remover
+    </ButtonContainer>
+  )
+}
 
-
-
-
-
-
-
+export { ButtonBuscar, ButtonRemover };
